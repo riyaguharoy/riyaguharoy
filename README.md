@@ -1,7 +1,6 @@
 ### Hi there 👋 I'm Riya and I'm a Software Developer.
 My main buzzwords 
-[java](https://camo.githubusercontent.com/f6c777e8c5c9ae4a6331664dab0a10c4cc3a1895ac3ababcc39b53058ba145d2/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4a61766126636f6c6f723d303037333936266c6f676f3d4a617661266c6f676f436f6c6f723d464646464646266c6162656c3d)
-
+https://www.google.com/url?sa=i&url=https%3A%2F%2Flogos-world.net%2Fjava-logo%2F&psig=AOvVaw3-njFdiCgrfNiJOzePM_YR&ust=1677708669634000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKDBp_yduf0CFQAAAAAdAAAAABAE
 <!--
 **riyaguharoy/riyaguharoy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
