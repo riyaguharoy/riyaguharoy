@@ -20,6 +20,8 @@ My main buzzwords
 ![JIRA](https://img.shields.io/static/v1?style=for-the-badge&message=JIRA&color=AE4CCF&logo=JIRA&logoColor=FFFFFF&label=)
 ![POSTMAN](https://img.shields.io/badge/POSTMAN%20-%23E6522C.svg?&style=for-the-badge&logo=POSTMAN&logoColor=white) 
 ![WINDOWS](https://img.shields.io/static/v1?style=for-the-badge&message=WINDOWS&color=222222&logo=WINDOWS&logoColor=FCC624&label=)
+![KAFKA](https://img.shields.io/static/v1?style=for-the-badge&message=WINDOWS&color=222222&logo=WINDOWS&logoColor=FCC624&label=)
+
 
 ### Connect with me 🔗
 <p align="left">
