@@ -1,4 +1,4 @@
-### Hi there 👋 I'm Riya and I'm a Software Developer.
+### Hi there 👋 I'm Riya and I'm a Data Engineer.
 My main buzzwords 
 
 ![PLSQL](https://img.shields.io/badge/PLSQL%20-%23CC0000.svg?&style=for-the-badge&logo=PLSQL&logoColor=white) 
