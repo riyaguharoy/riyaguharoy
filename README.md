@@ -1,7 +1,7 @@
 ### Hi there 👋 I'm Riya and I'm a Data Engineer.
 My main buzzwords 
 
-![SNOWFLAKE](https://img.shields.io/static/v1?style=for-the-badge&message=SNOWFLAKE&color=FF3633&logo=SNOWFLAKE&logoColor=FFFFFF&label=)
+![SNOWFLAKE](https://img.shields.io/static/v1?style=for-the-badge&message=SNOWFLAKE&color=FF3630&logo=SNOWFLAKE&logoColor=FFFFFF&label=)
 
 ![PLSQL](https://img.shields.io/badge/PLSQL%20-%23CC0000.svg?&style=for-the-badge&logo=PLSQL&logoColor=white) 
 ![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=47A248&logo=MySQL&logoColor=FFFFFF&label=)
