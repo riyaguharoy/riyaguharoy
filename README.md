@@ -7,7 +7,7 @@ My main buzzwords
 ![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=red&logo=MySQL&logoColor=FFFFFF&label=)
 ![Java](https://img.shields.io/static/v1?style=for-the-badge&message=Java&color=007396&logo=Java&logoColor=FFFFFF&label=)
 ![RESTAPI](https://img.shields.io/static/v1?style=for-the-badge&message=RESTAPI&color=F46800&logo=RESTAPI&logoColor=FFFFFF&label=)
-![HTML5](https://img.shields.io/badge/HTML5%20-%23000000.svg?&style=for-the-badge&logo=apache%20HTML5&logoColor=white) 
+![HTML5](https://img.shields.io/badge/HTML5-%23000000.svg?&style=for-the-badge&logo=apache%20HTML5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/CSS3%20-%23326ce5.svg?&style=for-the-badge&logo=CSS3&logoColor=white) 
 ![docker](https://img.shields.io/badge/docker-%232496ED.svg?&style=for-the-badge&logo=docker&logoColor=white) 
 ![git](https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white) 
