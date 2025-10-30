@@ -3,6 +3,7 @@ My main buzzwords
 
 ![SNOWFLAKE](https://img.shields.io/static/v1?style=for-the-badge&message=SNOWFLAKE&color=blue&logo=SNOWFLAKE&logoColor=FFFFFF&label=)
 ![AZURE](https://img.shields.io/static/v1?style=for-the-badge&message=AZURE&color=blue&logo=AZURE&logoColor=FFFFFF&label=)
+![PYTHON](https://img.shields.io/static/v1?style=for-the-badge&message=PYTHON&color=007396&logo=PYTHON&logoColor=FFFFFF&label=)
 ![PLSQL](https://img.shields.io/badge/PLSQL%20-%23CC0000.svg?&style=for-the-badge&logo=PLSQL&logoColor=white) 
 ![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=red&logo=MySQL&logoColor=FFFFFF&label=)
 ![Java](https://img.shields.io/static/v1?style=for-the-badge&message=Java&color=007396&logo=Java&logoColor=FFFFFF&label=)
