@@ -1,7 +1,7 @@
 ### Hi there 👋 I'm Riya and I'm a Data Engineer.
 My main buzzwords -   
-![DEEP LEARNING](https://img.shields.io/static/v1?style=for-the-badge&message=DEEP_LEARNING&color=blue&logo=DEEP_LEARNING&logoColor=FFFFFF&label=)
-![MACHINE LEARNING](https://img.shields.io/static/v1?style=for-the-badge&message=MACHINE_LEARNING&color=blue&logo=MACHINE_LEARNING&logoColor=FFFFFF&label=)
+![DEEP LEARNING](https://img.shields.io/static/v1?style=for-the-badge&message=DEEP%20LEARNING&color=blue&logo=DEEP%20LEARNING&logoColor=FFFFFF&label=)
+![MACHINE LEARNING](https://img.shields.io/static/v1?style=for-the-badge&message=MACHINE%20LEARNING&color=blue&logo=MACHINE%20LEARNING&logoColor=FFFFFF&label=)
 ![SNOWFLAKE](https://img.shields.io/static/v1?style=for-the-badge&message=SNOWFLAKE&color=blue&logo=SNOWFLAKE&logoColor=FFFFFF&label=)
 ![AZURE](https://img.shields.io/static/v1?style=for-the-badge&message=AZURE&color=blue&logo=AZURE&logoColor=FFFFFF&label=)
 ![PYTHON](https://img.shields.io/static/v1?style=for-the-badge&message=PYTHON&color=007396&logo=PYTHON&logoColor=FFFFFF&label=)
@@ -9,7 +9,7 @@ My main buzzwords -
 ![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=red&logo=MySQL&logoColor=FFFFFF&label=)
 ![Java](https://img.shields.io/static/v1?style=for-the-badge&message=Java&color=007396&logo=Java&logoColor=FFFFFF&label=)
 ![RESTAPI](https://img.shields.io/static/v1?style=for-the-badge&message=RESTAPI&color=F46800&logo=RESTAPI&logoColor=FFFFFF&label=)
-![HTML5](https://img.shields.io/badge/HTML5-%23000000.svg?&style=for-the-badge&logo=apache%20HTML5&logoColor=white) 
+![HTML5](https://img.shields.io/badge/HTML5%20-%23000000.svg?&style=for-the-badge&logo=HTML5&logoColor=00FFFF&label=)
 ![CSS3](https://img.shields.io/badge/CSS3%20-%23326ce5.svg?&style=for-the-badge&logo=CSS3&logoColor=white) 
 ![docker](https://img.shields.io/badge/docker-%232496ED.svg?&style=for-the-badge&logo=docker&logoColor=white) 
 ![git](https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white) 
