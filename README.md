@@ -1,6 +1,7 @@
 ### Hi there 👋 I'm Riya and I'm a Data Engineer.
 My main buzzwords 
-
+![DEEP LEARNING](https://img.shields.io/static/v1?style=for-the-badge&message=SNOWFLAKE&color=blue&logo=SNOWFLAKE&logoColor=FFFFFF&label=)
+![MACHINE LEARNING](https://img.shields.io/static/v1?style=for-the-badge&message=SNOWFLAKE&color=blue&logo=SNOWFLAKE&logoColor=FFFFFF&label=)
 ![SNOWFLAKE](https://img.shields.io/static/v1?style=for-the-badge&message=SNOWFLAKE&color=blue&logo=SNOWFLAKE&logoColor=FFFFFF&label=)
 ![AZURE](https://img.shields.io/static/v1?style=for-the-badge&message=AZURE&color=blue&logo=AZURE&logoColor=FFFFFF&label=)
 ![PYTHON](https://img.shields.io/static/v1?style=for-the-badge&message=PYTHON&color=007396&logo=PYTHON&logoColor=FFFFFF&label=)
