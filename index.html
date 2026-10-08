@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riya Guha Roy</title>
+<meta name="description" content="Riya Guha Roy — MSc Computer Science (Data Science) at USN. Research in deep generative models for medical imaging and computer vision for environmental monitoring. Senior Data Engineer with ~8 years of industry experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --text: #1d2228;
+    --muted: #5d6670;
+    --line: #e6e2da;
+    --accent: #1f5f8b;
+    --accent-soft: #e5eef5;
+    --tag: #f1eee8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #13171c;
+      --surface: #1a1f26;
+      --text: #e7e9ec;
+      --muted: #9aa3ad;
+      --line: #2a313a;
+      --accent: #7cb7e0;
+      --accent-soft: #1e2d3a;
+      --tag: #232a33;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #13171c;
+    --surface: #1a1f26;
+    --text: #e7e9ec;
+    --muted: #9aa3ad;
+    --line: #2a313a;
+    --accent: #7cb7e0;
+    --accent-soft: #1e2d3a;
+    --tag: #232a33;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Nav */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: 960px; margin: 0 auto; padding: 12px 16px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .nav-name { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.1rem; color: var(--text); }
+  .nav-links { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.9rem; }
+  .nav-links a { color: var(--muted); }
+  .nav-links a:hover { color: var(--accent); text-decoration: none; }
+
+  main { max-width: 960px; margin: 0 auto; padding: 0 16px 80px; }
+
+  /* Hero */
+  .hero {
+    display: grid; grid-template-columns: 1fr; gap: 28px;
+    padding: 56px 0 40px; border-bottom: 1px solid var(--line);
+  }
+  @media (min-width: 760px) { .hero { grid-template-columns: 1fr 260px; align-items: start; } }
+  .hero h1 {
+    font-family: "Fraunces", serif; font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.1; letter-spacing: -0.01em;
+  }
+  .hero .role { color: var(--muted); margin-top: 8px; font-size: 1.05rem; }
+  .hero p.bio { margin-top: 20px; max-width: 60ch; }
+  .open {
+    display: inline-block; margin-top: 18px; padding: 6px 12px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent); font-size: 0.85rem; font-weight: 500;
+  }
+  .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px; border-radius: 8px; font-size: 0.9rem; font-weight: 500;
+    border: 1px solid var(--line); color: var(--text); background: var(--surface);
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+  .btn.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .btn.primary:hover { opacity: 0.9; color: var(--bg); }
+  .btn svg { width: 16px; height: 16px; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px;
+  }
+  .side h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 10px; font-weight: 600; }
+  .side ul { list-style: none; }
+  .side li { font-size: 0.92rem; padding: 3px 0; }
+  .side .block + .block { margin-top: 18px; }
+
+  /* Sections */
+  section { padding: 48px 0 8px; scroll-margin-top: 60px; }
+  section h2 {
+    font-family: "Fraunces", serif; font-weight: 600; font-size: 1.6rem; margin-bottom: 22px;
+  }
+  .entry { display: grid; grid-template-columns: 1fr; gap: 4px 24px; padding: 18px 0; border-top: 1px solid var(--line); }
+  .entry:first-of-type { border-top: none; padding-top: 0; }
+  @media (min-width: 680px) { .entry { grid-template-columns: 140px 1fr; } }
+  .when { font-family: "JetBrains Mono", monospace; font-size: 0.82rem; color: var(--muted); padding-top: 3px; }
+  .entry h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.4; }
+  .entry .org { color: var(--muted); font-size: 0.93rem; }
+  .entry ul { margin: 8px 0 0 18px; }
+  .entry li { margin: 4px 0; font-size: 0.95rem; }
+  .entry li::marker { color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tag { background: var(--tag); color: var(--muted); font-size: 0.78rem; padding: 3px 9px; border-radius: 6px; }
+
+  .interests { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+  .interests .card h3 { font-size: 0.98rem; font-weight: 600; margin-bottom: 6px; }
+  .interests .card p { font-size: 0.9rem; color: var(--muted); }
+
+  .news { list-style: none; }
+  .news li { display: grid; grid-template-columns: 90px 1fr; gap: 16px; padding: 8px 0; font-size: 0.95rem; }
+  .news .when { padding-top: 2px; }
+
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .skills h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 8px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr; gap: 32px; }
+  @media (min-width: 760px) { .two-col { grid-template-columns: 1fr 1fr; } }
+  .plain { list-style: none; }
+  .plain li { padding: 7px 0; border-top: 1px solid var(--line); font-size: 0.94rem; }
+  .plain li:first-child { border-top: none; }
+  .plain .yr { color: var(--muted); font-family: "JetBrains Mono", monospace; font-size: 0.8rem; margin-left: 6px; }
+
+  details.more { margin-top: 10px; }
+  details.more summary { cursor: pointer; color: var(--accent); font-size: 0.92rem; padding: 8px 0; }
+
+  footer {
+    max-width: 960px; margin: 0 auto; padding: 28px 16px 40px;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+  }
+  .theme-toggle { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; font-size: 0.8rem; }
+
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .hero { padding-top: 36px; }
+  }
+  @media print {
+    nav, .btns, .theme-toggle { display: none; }
+    body { background: #fff; color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-name">Riya Guha Roy</a>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <h1>Riya Guha Roy</h1>
+      <p class="role">MSc Computer Science (Data Science), University of South-Eastern Norway · Senior Data Engineer</p>
+      <p class="bio">
+        I build deep generative models for healthcare and computer-vision systems for environmental monitoring.
+        My master's thesis, in collaboration with <strong>Simula Research Laboratory</strong>, develops models that
+        generate synthetic cardiac MR images and segmentation masks conditioned on patient clinical profiles,
+        tackling data scarcity and privacy barriers in medical AI. Before research, I spent around
+        <strong>8 years in industry</strong> designing and scaling data pipelines, including at Tata Consultancy Services,
+        so I care as much about reliable data and reproducible systems as about models.
+      </p>
+      <span class="open">Open to PhD positions and roles in applied AI, data science &amp; research</span>
+      <div class="btns">
+        <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Download CV
+        </a>
+        <a class="btn" href="mailto:riya12guharoy@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          Email
+        </a>
+        <a class="btn" href="https://github.com/riyaguharoy" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.7 18 5 18 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://linkedin.com/in/riyaguharoy" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <aside class="card side">
+      <div class="block">
+        <h3>Currently</h3>
+        <ul>
+          <li>MSc thesis with Simula (SEARCH, EU)</li>
+          <li>Teaching Assistant, USN</li>
+          <li>Oslo, Norway</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h3>Focus</h3>
+        <ul>
+          <li>Generative models</li>
+          <li>Medical image synthesis</li>
+          <li>Segmentation &amp; detection</li>
+          <li>Trustworthy synthetic data</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h3>Languages</h3>
+        <ul>
+          <li>English · Bengali · Hindi</li>
+          <li>Norwegian (A2)</li>
+        </ul>
+      </div>
+    </aside>
+  </header>
+
+  <!-- NEWS -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="when">2026</span><span>Started master's thesis on clinical-profile-conditioned synthetic cardiac MRI with <strong>Simula Research Laboratory</strong>, part of the EU-funded SEARCH project.</span></li>
+      <li><span class="when">2026</span><span>Completed the fully funded <strong>Erasmus+</strong> exchange semester at the University of Leeds, passed with Distinction.</span></li>
+      <li><span class="when">Jun 2026</span><span>Awarded an EU and institutional scholarship for the <strong>ENSSAT IoT Summer School Research Program</strong>, Université de Rennes.</span></li>
+      <li><span class="when">2026</span><span>Began a research collaboration with <strong>NILU</strong> (Norway) and <strong>NITTTR Kolkata</strong> on marine plastic debris detection; two joint publications in preparation.</span></li>
+    </ul>
+  </section>
+
+  <!-- RESEARCH INTERESTS -->
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <div class="interests">
+      <div class="card"><h3>Generative models for healthcare</h3><p>Conditional image and mask synthesis to ease medical data scarcity.</p></div>
+      <div class="card"><h3>Privacy &amp; trustworthy synthetic data</h3><p>Evaluating fidelity, downstream utility and privacy of generated data.</p></div>
+      <div class="card"><h3>Computer vision for the environment</h3><p>Joint segmentation and detection of marine plastic debris.</p></div>
+      <div class="card"><h3>Data-centric ML systems</h3><p>Scalable, reproducible pipelines from IoT sensors to warehouses.</p></div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & PROJECTS -->
+  <section id="research">
+    <h2>Research &amp; Projects</h2>
+
+    <div class="entry">
+      <div class="when">2026 – Present</div>
+      <div>
+        <h3>Clinical-Profile-Conditioned Synthetic Cardiac MRI Generation Using Deep Generative Models</h3>
+        <div class="org">Master's Thesis · USN in collaboration with Simula Research Laboratory</div>
+        <ul>
+          <li>Developing deep generative models that create synthetic cardiac MR images and their segmentation masks, conditioned on patient clinical profiles, to address medical data scarcity and privacy constraints.</li>
+          <li>Evaluating against an unconditioned baseline on anatomical fidelity, downstream utility, and privacy.</li>
+          <li>Conducted within SEARCH, an EU-funded project on trustworthy synthetic healthcare data for AI research.</li>
+        </ul>
+        <div class="tags"><span class="tag">Generative models</span><span class="tag">Medical imaging</span><span class="tag">Segmentation</span><span class="tag">Privacy</span><span class="tag">PyTorch</span></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2026 – Present</div>
+      <div>
+        <h3>Hybrid Deep Learning for Marine Plastic Debris Segmentation and Detection</h3>
+        <div class="org">Research collaboration with NILU, Norway and NITTTR Kolkata</div>
+        <ul>
+          <li>Building <strong>UDM-Net</strong>, a hybrid model combining a U-Net++ encoder-decoder with a DINO detection head, multi-scale feature fusion and CBAM/SE attention on a shared backbone to segment and detect floating plastic debris in a single pass.</li>
+          <li>Benchmarking against ten baselines: CNN detectors (YOLOv11, YOLOv10, Faster R-CNN, EfficientDet, RetinaNet), transformer detectors (RT-DETR, DINO), and segmentation models (Mask R-CNN, DeepLabV3+, U-Net++) on marine debris and microplastics datasets.</li>
+          <li>Work in progress toward two joint publications.</li>
+        </ul>
+        <div class="tags"><span class="tag">Computer vision</span><span class="tag">Object detection</span><span class="tag">Attention</span><span class="tag">Keras</span><span class="tag">TensorFlow</span></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">Jun – Jul 2026</div>
+      <div>
+        <h3>Low-Carbon, Privacy-Respecting IoT for Smart Cities</h3>
+        <div class="org">Summer Research Intern · ENSSAT, Université de Rennes</div>
+        <ul>
+          <li>Selected for the ENSSAT IoT Summer School Research Program 2026 on a competitive EU and institutional scholarship.</li>
+          <li>With an international research team, designed, prototyped and evaluated low-carbon, privacy-respecting IoT hardware and data pipelines, bridging embedded systems, IoT connectivity and Green IT research.</li>
+        </ul>
+        <div class="tags"><span class="tag">IoT</span><span class="tag">Smart cities</span><span class="tag">Green IT</span><span class="tag">Data pipelines</span></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2013</div>
+      <div>
+        <h3>SILICON EYE: Spectacles for Blind People</h3>
+        <div class="org">TATA First DOT Project · Runner-up</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="when">2025 – 2027</div>
+      <div>
+        <h3>M.S. in Computer Science (Data Science)</h3>
+        <div class="org">University of South-Eastern Norway (USN)</div>
+        <ul><li>Passed first year with Distinction.</li></ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2026</div>
+      <div>
+        <h3>M.S. Exchange Semester in Computer Science (Data Science)</h3>
+        <div class="org">University of Leeds, UK</div>
+        <ul>
+          <li>Fully funded by Erasmus+. Passed with Distinction.</li>
+          <li>Coursework in machine learning, deep learning, data mining and cloud technologies.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2011 – 2015</div>
+      <div>
+        <h3>B.Tech. in Electronics and Communication Engineering</h3>
+        <div class="org">MAKAUT (formerly WBUT), India</div>
+        <ul><li>Passed with Distinction.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <div class="entry">
+      <div class="when">Present</div>
+      <div>
+        <h3>Teaching Assistant</h3>
+        <div class="org">University of South-Eastern Norway (USN)</div>
+        <ul>
+          <li>B.Eng. in Artificial Intelligence &amp; Machine Learning.</li>
+          <li>Teaching the Data Management module for Master's students.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Industry Experience</h2>
+
+    <div class="entry">
+      <div class="when">Oct 2022 – Aug 2025</div>
+      <div>
+        <h3>Senior Data Engineer</h3>
+        <div class="org">Freelance</div>
+        <ul>
+          <li>Implemented ETL pipelines for two enterprise projects handling millions of records, with data governance policies and automated compliance checks that cut audit preparation time by <strong>50%</strong>.</li>
+          <li>Optimized ETL using Snowflake's native capabilities, reducing processing time by <strong>30%</strong> and cloud storage costs by <strong>20%</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">Sep 2021 – Sep 2022</div>
+      <div>
+        <h3>Senior Data Engineer</h3>
+        <div class="org">Tata Consultancy Services Limited, Lithuania</div>
+        <ul>
+          <li>Built an automated pipeline with Snowflake Streams, Tasks and dbt processing <strong>2 TB</strong> of daily transaction data, reducing ETL time from 6 hours to <strong>45 minutes</strong>.</li>
+          <li>Led migration of legacy reports to Power BI, saving over 10 hours per week of manual processing.</li>
+          <li>Migrated multi-source data into a Snowflake warehouse via AWS S3 and Snowpipe; set up real-time streaming, bulk loading and cross-account data sharing.</li>
+          <li>Curated a consolidated Snowflake data mart with models and transformations in dbt.</li>
+        </ul>
+      </div>
+    </div>
+
+    <details class="more">
+      <summary>Earlier roles (2016 – 2021)</summary>
+      <div class="entry">
+        <div class="when">Sep 2020 – Sep 2021</div>
+        <div>
+          <h3>Data Engineer</h3>
+          <div class="org">MBIT Computraining Pvt. Ltd. (Tata Group), India</div>
+          <ul>
+            <li>Created a reusable data product by migrating customers, policies and relationships from a legacy system using ELT, SSIS and PL/SQL through to production.</li>
+            <li>Owned requirements, database design and data flows in MSSQL/SSIS; redesigned a cloud data warehouse for security and performance.</li>
+            <li>Tuned PL/SQL and T-SQL for performance and led knowledge transfer within the team.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Jan 2018 – Sep 2020</div>
+        <div>
+          <h3>Software Engineer</h3>
+          <div class="org">Neptune Holidays Pvt. Ltd., India</div>
+          <ul>
+            <li>Implemented Oracle PL/SQL solutions and role-based access aligned to organizational hierarchy.</li>
+            <li>Ingested supplier data from DOTW via REST APIs (JSON/XML) into in-house servers.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Apr 2016 – Oct 2017</div>
+        <div>
+          <h3>Junior Engineer / Developer</h3>
+          <div class="org">Ardent Computech Pvt. Ltd., India</div>
+          <ul>
+            <li>Designed Oracle tables, views and indexes for web applications; built portal pages with PHP, JSP, JavaScript and MySQL.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Machine Learning &amp; Data Science</h3>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">Deep Learning</span><span class="tag">Computer Vision</span><span class="tag">NumPy</span><span class="tag">Pandas</span></div>
+      </div>
+      <div class="card">
+        <h3>Data Engineering</h3>
+        <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PL/SQL</span><span class="tag">Snowflake</span><span class="tag">dbt</span><span class="tag">SSIS</span><span class="tag">ETL/ELT</span><span class="tag">Reverse ETL</span><span class="tag">Java</span></div>
+      </div>
+      <div class="card">
+        <h3>Cloud &amp; Tools</h3>
+        <div class="tags"><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Power BI</span><span class="tag">CI/CD</span><span class="tag">Git</span><span class="tag">Jira</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS + CERTS -->
+  <section id="awards">
+    <div class="two-col">
+      <div>
+        <h2>Awards &amp; Scholarships</h2>
+        <ul class="plain">
+          <li>Fully funded Erasmus+ exchange scholarship, University of Leeds <span class="yr">2026</span></li>
+          <li>EU &amp; institutional scholarship, ENSSAT IoT Summer School <span class="yr">2026</span></li>
+          <li>Special Initiative Award, TCS Lithuania</li>
+          <li>Star Performer Award, TCS India</li>
+          <li>Runner-up, TATA First DOT Project “SILICON EYE” <span class="yr">2013</span></li>
+          <li>Winner, State Level Essay Competition, India</li>
+          <li>A+ Certificate of Merit (three times), State Education Board, India</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <ul class="plain">
+          <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+          <li>OCI Certified Associate <span class="yr">2023</span></li>
+          <li>Oracle Cloud Data Management Certified Associate <span class="yr">2023</span></li>
+          <li>dbt Fundamentals</li>
+          <li>Fundamentals of Business Analysis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+  <section id="service">
+    <h2>Service &amp; Outreach</h2>
+    <ul class="plain">
+      <li><strong>Incoming Study Abroad Ambassador</strong> (certified), University of Leeds, supporting departmental initiatives and communication with students and parents.</li>
+      <li><strong>Deputy Representative</strong>, USN, representing student interests to faculty.</li>
+      <li><strong>Volunteer</strong>, NMS Lilleborg (Norway), IT training and account management for a non-profit.</li>
+      <li><strong>Volunteer</strong>, Cognizant Outreach Program (Lithuania), restoration of the Dvarelis mansion with NGO Keliautoju Nameliai.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I'm happy to hear about PhD openings, research collaborations and data science roles.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:riya12guharoy@gmail.com">riya12guharoy@gmail.com</a>
+      <a class="btn" href="https://github.com/riyaguharoy" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/riyaguharoy" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://dev.to/riyaguharoy" target="_blank" rel="noopener">dev.to</a>
+      <a class="btn" href="https://x.com/riyaguharoy" target="_blank" rel="noopener">X</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="yr">2026</span> Riya Guha Roy · Oslo, Norway</span>
+  <button class="theme-toggle" id="themeBtn" type="button">Toggle theme</button>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  (function () {
+    var root = document.documentElement, btn = document.getElementById('themeBtn');
+    try { var saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
