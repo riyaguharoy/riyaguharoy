@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Riya Guha Roy</title>
-<meta name="description" content="Riya Guha Roy — Data Scientist and Senior Data Engineer in Oslo. Deep learning, generative models, computer vision and scalable data pipelines.">
+<meta name="description" content="Riya Guha Roy — Aspiring Data Scientist and Data Engineer in Oslo with 8+ years in scalable data solutions. Machine learning, deep learning, computer vision, generative AI and NLP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -91,14 +91,16 @@
     mask-image: linear-gradient(to bottom, #000 0%, transparent 85%);
     -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 85%);
   }
-  .hero-inner { position: relative; padding: 96px var(--gutter) 80px; max-width: 980px; }
+  .hero-inner { position: relative; padding: 96px var(--gutter) 80px; max-width: 1200px; }
   #home h1 {
     color: #fff; font-family: "Libre Baskerville", Georgia, serif;
     font-size: clamp(2.6rem, 9vw, 5.6rem); letter-spacing: -.02em; line-height: 1.05;
     text-shadow: 0 2px 24px rgba(0,0,0,.35);
   }
-  #home .tagline { margin-top: 18px; font-size: clamp(1rem, 2.2vw, 1.35rem); color: #d7eef0; font-weight: 600; }
+  #home .tagline { margin-top: 18px; font-size: clamp(.95rem, 1.75vw, 1.3rem); color: #d7eef0; font-weight: 600; }
+  @media (min-width: 768px) { #home .tagline { white-space: nowrap; font-size: clamp(.82rem, 1.75vw, 1.3rem); } }
   #home .tagline span { color: var(--accent); margin: 0 .35em; }
+  #home .keywords { margin-top: 10px; color: #9fd9dc; font-size: clamp(.82rem, 1.3vw, .98rem); letter-spacing: .04em; }
   #home .lead { margin: 18px auto 0; max-width: 62ch; color: #b9c9d1; font-size: clamp(.95rem, 1.4vw, 1.05rem); }
   #home hr { width: 60%; margin: 28px auto; border: 0; border-top: 1px solid rgba(255,255,255,.2); }
   .social { list-style: none; display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; }
@@ -166,6 +168,8 @@
   .job h3 { font-size: 1.2rem; }
   .job .info { color: var(--muted); font-style: italic; font-size: .95rem; margin: 2px 0 10px; }
   .job .info b { font-style: normal; color: var(--accent); font-weight: 600; }
+  .edu-list .job { border-bottom-color: var(--line); }
+  .about .edu-list .job h3 { text-transform: none; letter-spacing: 0; font-size: 1.15rem; margin: 0; }
   .job.edu p { margin: 2px 0; }
   .job.edu p span { font-weight: 600; color: var(--heading); }
   .job ul { padding-left: 20px; }
@@ -213,6 +217,14 @@
   .act h3 { font-size: 1.05rem; }
   .act .info { color: var(--muted); font-style: italic; font-size: .9rem; margin-bottom: 6px; }
 
+  /* ---------- AWARDS & CERTIFICATIONS ---------- */
+  .award-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 40px 56px; }
+  .award-grid h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 14px; }
+  .award-list { list-style: none; }
+  .award-list li { padding: 10px 0 10px 16px; border-left: 3px solid var(--accent); margin-bottom: 10px; background: var(--bg-alt); border-radius: 0 6px 6px 0; padding-right: 12px; }
+  .sec.alt .award-list li { background: var(--card); }
+  .award-list li span { color: var(--muted); font-size: .85rem; margin-left: 6px; white-space: nowrap; }
+
   /* ---------- STATS ---------- */
   #stats {
     color: #fff; text-align: center;
@@ -245,6 +257,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#resume">Resume</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#awards">Awards</a></li>
     <li><a href="#activities">Activities</a></li>
     <li><a href="#stats">Highlights</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -255,15 +268,14 @@
 <header id="home">
   <div class="hero-inner">
     <h1>Riya Guha Roy</h1>
-    <p class="tagline">Data Scientist<span>|</span>ML Engineer<span>|</span>Senior Data Engineer</p>
-    <p class="lead">I turn messy, large-scale data into models that work in the real world, from deep generative models for medical imaging to pipelines moving terabytes a day.</p>
+    <p class="tagline">Aspiring Data Scientist<span>|</span>Experienced Data Engineer<span>|</span>8+ Years in Scalable Data Solutions</p>
+    <p class="keywords">Machine Learning · Deep Learning · Computer Vision · Generative AI · NLP</p>
+    <p class="lead">I build models and make data pipelines reliable enough to run in production, so teams can make decisions based on data rather than guesswork.</p>
     <hr>
     <ul class="social">
       <li><a href="https://github.com/riyaguharoy" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17 4.7 18 5 18 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .5z"/></svg></a></li>
       <li><a href="https://linkedin.com/in/riyaguharoy" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a></li>
       <li><a href="mailto:riya12guharoy@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></li>
-      <li><a href="https://dev.to/riyaguharoy" target="_blank" rel="noopener" aria-label="dev.to"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.4 9.6c-.2-.1-.4-.2-.6-.2H6v5.2h.8c.2 0 .4-.1.6-.2.2-.1.3-.4.3-.7V10.3c0-.3-.1-.5-.3-.7zM21 3H3a2 2 0 00-2 2v14a2 2 0 002 2h18a2 2 0 002-2V5a2 2 0 00-2-2zM8.9 13.7c0 .9-.6 2.3-2.4 2.3H4.6V8h2c1.7 0 2.3 1.4 2.3 2.3v3.4zm4.1-4.3h-2.2v1.6h1.4v1.4h-1.4v1.6H13V16h-2.6c-.5 0-.9-.4-.9-.9V8.9c0-.5.4-.9.9-.9H13v1.4zm4.5 5.6c-.6 1.5-1.7 1.2-2.2 0L13.7 8h1.5l1.3 4.9L17.8 8h1.5l-1.8 7z"/></svg></a></li>
-      <li><a href="https://x.com/riyaguharoy" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2.3h3.4l-7.4 8.4 8.7 11.5h-6.8l-5.3-7-6.1 7H1.3l7.9-9L.8 2.3h7l4.8 6.4 5.6-6.4zm-1.2 17.9h1.9L7.1 4.2H5.1l11.9 16z"/></svg></a></li>
     </ul>
   </div>
   <a class="scroll-down" href="#about" aria-label="Scroll to About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 11l4 4 4-4"/></svg></a>
@@ -278,22 +290,24 @@
       <span aria-hidden="true">RG</span>
     </div>
     <div>
-      <p class="eyebrow">About</p>
-      <h2 class="sec-title">Let me introduce myself.</h2>
-      <p>I'm a data professional with around <b>8 years in industry</b> designing and scaling data pipelines, including as a Senior Data Engineer at Tata Consultancy Services, now moving into data science and applied AI. I'm completing an MSc in Computer Science (Data Science) at the University of South-Eastern Norway, with a fully funded Erasmus+ semester at the University of Leeds, both passed with Distinction.</p>
-      <p style="margin-top:12px">My current work builds deep generative models that create synthetic cardiac MR images for healthcare AI with Simula Research Laboratory, and hybrid computer-vision models that detect plastic debris in the ocean. I bring the rare combination of research-grade modelling and production data engineering.</p>
-
-      <h3 style="margin-top:28px">Profile</h3>
+      <h3>Profile</h3>
       <ul class="profile-list">
         <li><b>Name:</b> Riya Guha Roy</li>
         <li><b>Location:</b> Oslo, Norway</li>
         <li><b>Email:</b> <a href="mailto:riya12guharoy@gmail.com">riya12guharoy@gmail.com</a></li>
+        <li><b>Phone:</b> <a href="tel:+4792535778">+47 925 35 778</a></li>
         <li><b>Languages:</b> English, Bengali, Hindi, Norwegian (A2)</li>
-        <li><b>Looking for:</b> Data Scientist, ML Engineer, applied AI roles</li>
+        <li><b>Looking for:</b> Data science, applied AI, data engineering and research roles</li>
         <li><b>Experience:</b> 8+ years in IT and data</li>
         <li><b>Willing to relocate:</b> Yes</li>
         <li><b>Domains:</b> Insurance, reinsurance, tourism, education</li>
       </ul>
+
+      <h3>About me</h3>
+      <p>I'm a results-driven Data Engineer transitioning into Data Science, with <b>8+ years</b> of experience designing and building real-time data pipelines, enterprise data warehouses and scalable analytics platforms. Most of my work has been end to end: getting data in, transforming it, modelling it and making it useful for reporting. I've worked mainly with Snowflake, Python, SQL, dbt, AWS, Azure and Power BI, including real-time streaming, CDC, SCD Type 2 modelling, and automating pipelines that used to depend on manual work.</p>
+      <p style="margin-top:12px">I'm now applying that foundation to machine learning and deep learning research. I'm pursuing an MSc in Computer Science (Data Science) at the University of South-Eastern Norway, where I passed my first year with Distinction, after a fully funded Erasmus+ exchange at the University of Leeds, also with Distinction. My academic focus spans machine learning, deep learning, cloud computing systems and advanced data mining (NLP), with an emphasis on developing a deep, hands-on understanding of how to build models that solve complex problems involving the processing of unstructured inputs and the generation of unstructured outputs, while strengthening my ability to bridge data engineering foundations with intelligent, scalable AI solutions.</p>
+      <p style="margin-top:12px">My master's thesis with <b>Simula Research Laboratory</b> develops deep generative models that create synthetic cardiac MR images and segmentation masks conditioned on patient clinical profiles, addressing data scarcity and privacy barriers in healthcare. Alongside it, I'm a teaching assistant at USN in AI, machine learning and data management. Before that, I spent a summer at ENSSAT, Université de Rennes, building IoT and smart-city data pipelines.</p>
+      <p style="margin-top:12px">I've worked and studied in India, Lithuania, France, the UK and Norway, and I'm comfortable in multicultural, cross-functional teams.</p>
 
       <h3>Skills</h3>
       <ul class="bars" id="bars">
@@ -301,19 +315,48 @@
         <li><div class="bar-label">Snowflake, dbt &amp; ETL/ELT <em>Expert</em></div><div class="bar"><i style="--w:92%"></i></div></li>
         <li><div class="bar-label">Python <em>Advanced</em></div><div class="bar"><i style="--w:88%"></i></div></li>
         <li><div class="bar-label">Machine learning &amp; deep learning <em>Advanced</em></div><div class="bar"><i style="--w:80%"></i></div></li>
+        <li><div class="bar-label">TensorFlow, Keras &amp; PyTorch <em>Intermediate</em></div><div class="bar"><i style="--w:65%"></i></div></li>
         <li><div class="bar-label">Data mining &amp; text analytics <em>Advanced</em></div><div class="bar"><i style="--w:78%"></i></div></li>
         <li><div class="bar-label">Power BI &amp; cloud (AWS, Azure) <em>Proficient</em></div><div class="bar"><i style="--w:75%"></i></div></li>
       </ul>
 
       <div class="skill-groups">
-        <div><h4>Data science</h4><div class="chips"><span class="chip">Machine learning</span><span class="chip">Deep learning</span><span class="chip">Data mining</span><span class="chip">Text analytics</span><span class="chip">Feature engineering</span><span class="chip">Exploratory analysis</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">NumPy</span><span class="chip">Pandas</span></div></div>
-        <div><h4>Data engineering</h4><div class="chips"><span class="chip">SQL</span><span class="chip">PL/SQL</span><span class="chip">T-SQL</span><span class="chip">Snowflake</span><span class="chip">SnowSQL &amp; Snowpipe</span><span class="chip">dbt</span><span class="chip">SSIS</span><span class="chip">MSSQL</span><span class="chip">Oracle</span><span class="chip">Real-time processing</span><span class="chip">Data modelling</span></div></div>
+        <div><h4>Data science</h4><div class="chips"><span class="chip">Machine learning</span><span class="chip">Deep learning</span><span class="chip">Data mining</span><span class="chip">Text analytics</span><span class="chip">NLP</span><span class="chip">Computer vision</span><span class="chip">Generative AI</span><span class="chip">Feature engineering</span><span class="chip">Exploratory analysis</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">NumPy</span><span class="chip">Pandas</span></div></div>
+        <div><h4>Data engineering</h4><div class="chips"><span class="chip">SQL</span><span class="chip">PL/SQL</span><span class="chip">T-SQL</span><span class="chip">Snowflake</span><span class="chip">SnowSQL &amp; Snowpipe</span><span class="chip">dbt</span><span class="chip">SSIS</span><span class="chip">MSSQL</span><span class="chip">Oracle</span><span class="chip">Real-time streaming</span><span class="chip">CDC</span><span class="chip">SCD Type 2</span><span class="chip">Data modelling</span><span class="chip">Enterprise data warehousing</span></div></div>
         <div><h4>Reverse ETL</h4><div class="chips"><span class="chip">Census</span><span class="chip">Segment</span><span class="chip">ALTR</span></div></div>
         <div><h4>Programming</h4><div class="chips"><span class="chip">Python</span><span class="chip">Core Java</span><span class="chip">SQL</span></div></div>
         <div><h4>Cloud &amp; DevOps</h4><div class="chips"><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">Cloud computing</span><span class="chip">CI/CD</span><span class="chip">Git</span><span class="chip">FileZilla</span></div></div>
         <div><h4>BI &amp; project tools</h4><div class="chips"><span class="chip">Power BI</span><span class="chip">Jira</span><span class="chip">Trello</span><span class="chip">Agile</span><span class="chip">Waterfall</span></div></div>
         <div><h4>Security concepts</h4><div class="chips"><span class="chip">Cryptography</span><span class="chip">Encryption</span><span class="chip">PKI</span><span class="chip">SQL injection</span><span class="chip">Data governance</span></div></div>
         <div><h4>Interpersonal</h4><div class="chips"><span class="chip">Active listening</span><span class="chip">Adaptability</span><span class="chip">Resilience &amp; growth mindset</span><span class="chip">Mentorship &amp; technical leadership</span><span class="chip">Managing expectations</span><span class="chip">Creative problem solving</span><span class="chip">Conflict resolution</span></div></div>
+      </div>
+
+      <h3>Education</h3>
+      <div class="edu-list">
+        <div class="job edu">
+          <h3>Master of Science in Computer Science (Data Science)</h3>
+          <p class="info"><b>University of South-Eastern Norway (USN)</b> | Norway</p>
+          <p><span>Expected graduation:</span> 2027</p>
+          <p><span>Thesis:</span> "Clinical-Profile-Conditioned Synthetic Cardiac MRI Generation Using Deep Generative Models"</p>
+          <p><span>Advisor:</span> Vimala Nunavath (USN)</p>
+          <p><span>Co-advisors:</span> Molly Maleckar and Vajira Thambawita (Simula Research Laboratory)</p>
+          <p><span>Result:</span> First year passed with Distinction</p>
+        </div>
+        <div class="job edu">
+          <h3>Master of Science Exchange Semester in Computer Science (Data Science)</h3>
+          <p class="info"><b>University of Leeds</b> | Leeds, United Kingdom</p>
+          <p><span>Completed:</span> 2026</p>
+          <p><span>Funding:</span> Fully funded Erasmus+ exchange scholarship</p>
+          <p><span>Coursework:</span> Machine learning, deep learning, data mining, cloud technologies</p>
+          <p><span>Result:</span> Passed with Distinction</p>
+        </div>
+        <div class="job edu">
+          <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+          <p class="info"><b>Maulana Abul Kalam Azad University of Technology (formerly WBUT)</b> | West Bengal, India</p>
+          <p><span>Graduated:</span> 2015</p>
+          <p><span>Result:</span> Passed with Distinction</p>
+          <p><span>Project:</span> "SILICON EYE – Spectacles for Blind People", Runner-up, TATA First DOT Project, 2013</p>
+        </div>
       </div>
 
       <a class="btn" href="#contact">Hire me</a><a class="btn ghost" href="#projects">See projects</a>
@@ -327,14 +370,14 @@
     <div class="sec-head">
       <p class="eyebrow">Resume</p>
       <h2 class="sec-title">More of my credentials.</h2>
-      <p>Research, industry experience and education.</p>
+      <p>Research and work experience.</p>
     </div>
 
     <div class="res-block">
       <h2><span>Research</span></h2>
       <div>
         <div class="job">
-          <h3>Master's Thesis Researcher</h3>
+          <h3>Master's Thesis Student</h3>
           <p class="info"><b>USN &amp; Simula Research Laboratory</b> · 2026 – Present</p>
           <ul>
             <li>Developing deep generative models that synthesise cardiac MR images and segmentation masks conditioned on patient clinical profiles.</li>
@@ -368,6 +411,11 @@
       <h2><span>Work</span></h2>
       <div>
         <div class="job">
+          <h3>Teaching Assistant</h3>
+          <p class="info"><b>University of South-Eastern Norway</b> · Present</p>
+          <p>Teaching AI &amp; Machine Learning (B.Eng.) and Data Management (Master's).</p>
+        </div>
+        <div class="job">
           <h3>Senior Data Engineer</h3>
           <p class="info"><b>Freelance, Remote</b> · Oct 2022 – Aug 2025</p>
           <ul>
@@ -377,6 +425,12 @@
             <li>Optimised ETL using Snowflake's native capabilities, reducing processing time by 30% and cloud storage costs by 20%.</li>
           </ul>
           <div class="chips"><span class="chip">Snowflake</span><span class="chip">SnowSQL</span><span class="chip">Snowpipe</span><span class="chip">dbt</span><span class="chip">AWS</span><span class="chip">Data governance</span></div>
+        </div>
+        <div class="job">
+          <h3>Data Engineer Intern</h3>
+          <p class="info"><b>Exadel Inc., Lithuania</b></p>
+          <ul>
+            <li>Completed a data engineering internship at Exadel, an international software engineering company, gaining hands-on experience with data pipelines, SQL and data warehousing practices.</li>          </ul>
         </div>
         <div class="job">
           <h3>Senior Data Engineer</h3>
@@ -420,53 +474,9 @@
           </ul>
           <div class="chips"><span class="chip">Oracle</span><span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">MySQL</span></div>
         </div>
-        <div class="job">
-          <h3>Data Engineer Intern</h3>
-          <p class="info"><b>Exadel Inc., Lithuania</b></p>
-          <ul><li>Completed an internship as a Data Engineer.</li></ul>
-        </div>
       </div>
     </div>
 
-    <div class="res-block">
-      <h2><span>Teaching</span></h2>
-      <div>
-        <div class="job">
-          <h3>Teaching Assistant</h3>
-          <p class="info"><b>University of South-Eastern Norway</b> · Present</p>
-          <ul><li>B.Eng. in AI &amp; Machine Learning; teaching the Data Management module for Master's students.</li></ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="res-block">
-      <h2><span>Education</span></h2>
-      <div>
-        <div class="job edu">
-          <h3>Master of Science in Computer Science (Data Science)</h3>
-          <p class="info"><b>University of South-Eastern Norway (USN)</b> | Norway</p>
-          <p><span>Expected graduation:</span> 2027</p>
-          <p><span>Thesis:</span> "Clinical-Profile-Conditioned Synthetic Cardiac MRI Generation Using Deep Generative Models"</p>
-          <p><span>Advisor:</span> Vimala Nunavath (USN)</p>
-          <p><span>Co-advisors:</span> Molly Maleckar and Vajira Thambawita (Simula Research Laboratory)</p>
-          <p><span>Result:</span> First year passed with Distinction</p>
-        </div>
-        <div class="job edu">
-          <h3>Master of Science Exchange Semester in Computer Science (Data Science)</h3>
-          <p class="info"><b>University of Leeds</b> | Leeds, United Kingdom</p>
-          <p><span>Completed:</span> 2026</p>
-          <p><span>Funding:</span> Fully funded Erasmus+ exchange scholarship</p>
-          <p><span>Coursework:</span> Machine learning, deep learning, data mining, cloud technologies</p>
-          <p><span>Result:</span> Passed with Distinction</p>
-        </div>
-        <div class="job edu">
-          <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
-          <p class="info"><b>Maulana Abul Kalam Azad University of Technology (formerly WBUT)</b> | West Bengal, India</p>
-          <p><span>Graduated:</span> 2015</p>
-          <p><span>Result:</span> Passed with Distinction</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -543,21 +553,54 @@
   <div class="chips"><span class="chip">Electronics</span><span class="chip">Assistive tech</span></div></div>
   <div class="d-foot"><button class="close">Close</button></div></dialog>
 
+<!-- AWARDS & CERTIFICATIONS -->
+<section id="awards" class="sec alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Recognition</p>
+      <h2 class="sec-title">Awards &amp; Certifications</h2>
+    </div>
+    <div class="award-grid">
+      <div>
+        <h3>Awards &amp; Scholarships</h3>
+        <ul class="award-list">
+          <li>Fully funded Erasmus+ exchange scholarship, University of Leeds <span>2026</span></li>
+          <li>EU and institutional scholarship, ENSSAT IoT Summer School Research Program <span>2026</span></li>
+          <li>Special Initiative Award, Tata Consultancy Services, Lithuania</li>
+          <li>Star Performer Award, Tata Consultancy Services, India</li>
+          <li>Runner-up, TATA First DOT Project "SILICON EYE – Spectacles for Blind People" <span>2013</span></li>
+          <li>Winner, State Level Essay Competition, India</li>
+          <li>A+ Certificate of Merit (three times), State Education Board, India</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <ul class="award-list">
+          <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+          <li>Oracle Cloud Infrastructure 2023 Certified Associate (1Z0-1085-23)</li>
+          <li>Oracle Cloud Data Management 2023 Certified Associate (1Z0-1105-23)</li>
+          <li>dbt Fundamentals</li>
+          <li>Fundamentals of Business Analysis</li>
+          <li>Find Your Everest</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ACTIVITIES -->
-<section id="activities" class="sec alt">
+<section id="activities" class="sec">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Activities</p>
       <h2 class="sec-title">Beyond the code.</h2>
-      <p>Leadership, awards and community work.</p>
+      <p>Leadership and community work.</p>
     </div>
     <div class="acts">
       <div class="act"><h3>Incoming Study Abroad Ambassador</h3><p class="info">University of Leeds · 2026</p><p>Certified ambassador supporting departmental initiatives and communication with students and their parents.</p></div>
       <div class="act"><h3>Deputy Representative</h3><p class="info">University of South-Eastern Norway</p><p>Represented student interests and facilitated communication between students and faculty.</p></div>
       <div class="act"><h3>Volunteer</h3><p class="info">NMS Lilleborg, Norway</p><p>Provided IT training for this non-profit and managed accounts as a cashier.</p></div>
       <div class="act"><h3>Volunteer</h3><p class="info">Cognizant Outreach Program, Lithuania</p><p>Helped restore the Dvarelis mansion in Kriaunos, Rokiškis, with the NGO Keliautoju Nameliai.</p></div>
-      <div class="act"><h3>Awards</h3><p class="info">Industry &amp; academic</p><p>Erasmus+ scholarship (2026), ENSSAT scholarship (2026), Special Initiative Award (TCS Lithuania), Star Performer Award (TCS India), runner-up in TATA First DOT 2013, State Level Essay Competition winner, A+ Certificate of Merit three times.</p></div>
-      <div class="act"><h3>Certifications</h3><p class="info">Cloud, data &amp; business</p><p>Microsoft Certified: Azure Fundamentals (AZ-900); Oracle Cloud Infrastructure 2023 Certified Associate (1Z0-1085-23); Oracle Cloud Data Management 2023 Certified Associate (1Z0-1105-23); dbt Fundamentals; Fundamentals of Business Analysis; Find Your Everest.</p></div>
     </div>
   </div>
 </section>
@@ -569,8 +612,7 @@
     <div class="stat"><div class="num">2 TB</div><div class="lbl">Data processed daily</div></div>
     <div class="stat"><div class="num">8×</div><div class="lbl">Faster ETL (6 h → 45 min)</div></div>
     <div class="stat"><div class="num">10</div><div class="lbl">Models benchmarked</div></div>
-    <div class="stat"><div class="num">2</div><div class="lbl">Papers in preparation</div></div>
-    <div class="stat"><div class="num">4</div><div class="lbl">Languages spoken</div></div>
+    <div class="stat"><div class="num">5</div><div class="lbl">Countries worked &amp; studied</div></div>
   </div>
 </section>
 
@@ -580,7 +622,7 @@
     <div class="sec-head">
       <p class="eyebrow">Contact</p>
       <h2 class="sec-title">I'd love to connect with you.</h2>
-      <p>Open to Data Scientist, ML Engineer and applied AI roles in Norway and across Europe.</p>
+      <p>Open to roles in data science, applied AI, data engineering and research. Willing to relocate.</p>
     </div>
     <div class="contact-grid">
       <div><h4>Where to find me</h4><p>Oslo, Norway</p></div>
